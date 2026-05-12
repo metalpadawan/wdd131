@@ -1,0 +1,201 @@
+:root {
+  --primary-color: #143d59;
+  --secondary-color: #0f2433;
+  --accent-color: #1f7a5b;
+  --background-color: #f4f7f8;
+  --card-color: #ffffff;
+  --text-color: #1f2933;
+  --muted-color: #52616b;
+  --border-color: #d9e2e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+header {
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+#course-title {
+  display: block;
+  padding: 1.4rem 1rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-color);
+}
+
+nav a {
+  flex: 1 1 10rem;
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+}
+
+h1 {
+  grid-column: 1 / -1;
+  margin: 0.5rem 0;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--card-color);
+  box-shadow: 0 2px 8px rgb(15 36 51 / 10%);
+}
+
+.card h2 {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+.card h3 {
+  width: min(80%, 24rem);
+  margin: 1rem auto;
+  padding-bottom: 0.35rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.about-grid,
+.country-grid {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  align-items: start;
+}
+
+.about-grid {
+  grid-template-columns: 1fr 180px;
+}
+
+.country-grid {
+  grid-template-columns: 180px 1fr;
+}
+
+.profile-image,
+.resource-image,
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-image {
+  border: 1px solid var(--border-color);
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 0.25rem;
+  color: var(--muted-color);
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.resource-image {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+}
+
+.card ul {
+  margin: 1rem 0 1.5rem;
+  padding: 0 2rem;
+}
+
+.card li {
+  margin: 0.55rem 0;
+}
+
+.card a {
+  color: #0e5f87;
+}
+
+.card a:hover {
+  color: var(--accent-color);
+}
+
+footer {
+  padding: 1rem;
+  color: #ffffff;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: #f6d58a;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 760px) {
+  #course-title {
+    font-size: 1.45rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    flex-basis: 50%;
+  }
+
+  main,
+  .about-grid,
+  .country-grid {
+    grid-template-columns: 1fr;
+  }
+}
