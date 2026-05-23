@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="650" viewBox="0 0 1000 650">
+  <title>Country page wide wireframe</title>
+  <desc>Wide view wireframe for the Nigeria country page with hero image and overlay cards for data and weather.</desc>
+  <defs>
+    <pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse">
+      <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#e7e7e7" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="650" fill="url(#grid)"/>
+  <rect x="1" y="1" width="998" height="648" fill="none" stroke="#111" stroke-width="2"/>
+
+  <rect x="0" y="0" width="1000" height="92" fill="#fff" stroke="#111" stroke-width="1.5"/>
+  <rect x="325" y="22" width="350" height="48" fill="#fff" stroke="#111" stroke-width="1.25"/>
+  <text x="500" y="54" text-anchor="middle" font-family="Arial, sans-serif" font-size="26">Nigeria</text>
+
+  <rect x="0" y="92" width="1000" height="500" fill="#fafafa" stroke="#111" stroke-width="1.5"/>
+  <line x1="0" y1="92" x2="1000" y2="592" stroke="#9b9b9b" stroke-width="1"/>
+  <line x1="1000" y1="92" x2="0" y2="592" stroke="#9b9b9b" stroke-width="1"/>
+  <text x="500" y="342" text-anchor="middle" font-family="Arial, sans-serif" font-size="20">Large Responsive Hero Image</text>
+
+  <rect x="38" y="126" width="310" height="250" fill="#ffffff" opacity="0.92" stroke="#111" stroke-width="1.25"/>
+  <rect x="18" y="146" width="230" height="46" fill="#fff" stroke="#111" stroke-width="1.25"/>
+  <text x="133" y="176" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700">Data</text>
+  <g font-family="Arial, sans-serif" font-size="15">
+    <text x="166" y="222" text-anchor="end">Area:</text>
+    <text x="214" y="222">Value</text>
+    <text x="166" y="246" text-anchor="end">Population:</text>
+    <text x="214" y="246">Value</text>
+    <text x="166" y="270" text-anchor="end">Capital:</text>
+    <text x="214" y="270">Value</text>
+    <text x="166" y="294" text-anchor="end">Languages:</text>
+    <text x="214" y="294">Value</text>
+    <text x="166" y="318" text-anchor="end">Currency:</text>
+    <text x="214" y="318">Value</text>
+  </g>
+
+  <rect x="652" y="318" width="310" height="230" fill="#ffffff" opacity="0.92" stroke="#111" stroke-width="1.25"/>
+  <rect x="632" y="338" width="250" height="46" fill="#fff" stroke="#111" stroke-width="1.25"/>
+  <text x="757" y="368" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700">Weather ⛅</text>
+  <g font-family="Arial, sans-serif" font-size="15">
+    <text x="786" y="420" text-anchor="end">Temperature:</text>
+    <text x="834" y="420">Value</text>
+    <text x="786" y="444" text-anchor="end">Conditions:</text>
+    <text x="834" y="444">Value</text>
+    <text x="786" y="468" text-anchor="end">Wind:</text>
+    <text x="834" y="468">Value</text>
+    <text x="786" y="492" text-anchor="end">Wind Chill:</text>
+    <text x="834" y="492">Value</text>
+  </g>
+
+  <rect x="0" y="592" width="1000" height="58" fill="#fff" stroke="#111" stroke-width="1.5"/>
+  <text x="500" y="616" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Footer: copyright - name - country</text>
+  <text x="500" y="636" text-anchor="middle" font-family="Arial, sans-serif" font-size="15">Last Modified Date</text>
+</svg>
