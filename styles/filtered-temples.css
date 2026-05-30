@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #1f2933;
+  background-color: #f4f7f8;
+}
+
+header,
+footer {
+  color: #ffffff;
+  background-color: #143d59;
+}
+
+.header-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#menu {
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 0;
+  color: #ffffff;
+  background: transparent;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "\2630";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+nav {
+  grid-column: 1 / -1;
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+nav.open {
+  display: flex;
+}
+
+nav a {
+  border-radius: 6px;
+  padding: 0.9rem;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus,
+nav a[aria-current="page"] {
+  color: #143d59;
+  background-color: #ffffff;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  color: #143d59;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.temple-card {
+  overflow: hidden;
+  border: 1px solid #d9e2e8;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 16px rgb(15 36 51 / 12%);
+}
+
+.temple-card h2 {
+  margin: 0;
+  padding: 1rem 1rem 0.35rem;
+  color: #143d59;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.temple-card p {
+  margin: 0.35rem 1rem;
+  color: #334155;
+  text-align: center;
+}
+
+.temple-card p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.temple-card span {
+  font-weight: 700;
+}
+
+.temple-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: cover;
+  background-color: #d9e2e8;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  color: #f6d58a;
+  font-size: 0.85rem;
+}

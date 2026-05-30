@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="650" viewBox="0 0 400 650" role="img" aria-labelledby="title desc">
+  <title id="title">Desert mesas at night</title>
+  <desc id="desc">A stylized portrait scene with desert mesas under a night sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#14213d"/>
+      <stop offset="0.55" stop-color="#3f4f72"/>
+      <stop offset="1" stop-color="#c08f62"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="650" fill="url(#sky)"/>
+  <g fill="#f4e6a6">
+    <circle cx="80" cy="90" r="2"/>
+    <circle cx="135" cy="160" r="2"/>
+    <circle cx="245" cy="85" r="2"/>
+    <circle cx="320" cy="145" r="2"/>
+    <circle cx="365" cy="70" r="2"/>
+  </g>
+  <circle cx="295" cy="205" r="44" fill="#f6d58a"/>
+  <path d="M0 430 L86 430 L86 370 L165 370 L165 650 L0 650 Z" fill="#8a4f3d"/>
+  <path d="M205 650 L205 345 L320 345 L320 420 L400 420 L400 650 Z" fill="#734437"/>
+  <path d="M0 515 C84 478 128 540 200 505 C290 462 335 520 400 488 L400 650 L0 650 Z" fill="#4f2f2c"/>
+</svg>

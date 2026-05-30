@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="650" viewBox="0 0 400 650" role="img" aria-labelledby="title desc">
+  <title id="title">City skyline at sunset</title>
+  <desc id="desc">A stylized portrait scene with a city skyline at sunset.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#efb0a1"/>
+      <stop offset="0.5" stop-color="#b47aa1"/>
+      <stop offset="1" stop-color="#24355f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="650" fill="url(#sky)"/>
+  <circle cx="310" cy="150" r="48" fill="#ffd58a"/>
+  <rect x="24" y="345" width="58" height="305" fill="#17233f"/>
+  <rect x="94" y="280" width="72" height="370" fill="#1f2e4d"/>
+  <rect x="184" y="215" width="56" height="435" fill="#17233f"/>
+  <rect x="252" y="325" width="48" height="325" fill="#203456"/>
+  <rect x="315" y="255" width="62" height="395" fill="#16233d"/>
+  <g fill="#f6d58a">
+    <rect x="110" y="310" width="12" height="18"/>
+    <rect x="138" y="356" width="12" height="18"/>
+    <rect x="200" y="250" width="12" height="18"/>
+    <rect x="336" y="286" width="12" height="18"/>
+    <rect x="42" y="386" width="12" height="18"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="650" viewBox="0 0 400 650" role="img" aria-labelledby="title desc">
+  <title id="title">Forest path with moonlight</title>
+  <desc id="desc">A stylized portrait scene with moonlight over a forest path.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1e3350"/>
+      <stop offset="1" stop-color="#12251f"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="650" fill="url(#sky)"/>
+  <circle cx="300" cy="120" r="48" fill="#f2f2dc"/>
+  <path d="M80 650 L185 300 L225 300 L320 650 Z" fill="#b6905f"/>
+  <path d="M0 650 L135 650 L188 300 L170 300 Z" fill="#173826"/>
+  <path d="M265 650 L400 650 L230 300 L212 300 Z" fill="#173826"/>
+  <g fill="#20533b">
+    <path d="M65 210 L15 355 L115 355 Z"/>
+    <path d="M140 160 L80 355 L200 355 Z"/>
+    <path d="M270 185 L215 360 L325 360 Z"/>
+    <path d="M350 225 L302 365 L398 365 Z"/>
+  </g>
+</svg>

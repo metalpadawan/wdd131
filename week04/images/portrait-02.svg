@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="650" viewBox="0 0 400 650" role="img" aria-labelledby="title desc">
+  <title id="title">Mountain lake scene</title>
+  <desc id="desc">A stylized portrait scene with mountains reflected in a lake.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#b8d8f2"/>
+      <stop offset="0.58" stop-color="#7fb3c9"/>
+      <stop offset="1" stop-color="#234b57"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="650" fill="url(#sky)"/>
+  <path d="M0 335 L105 170 L194 335 Z" fill="#304d63"/>
+  <path d="M82 335 L230 120 L400 335 Z" fill="#1f3f55"/>
+  <path d="M0 335 L105 170 L148 248 L194 335 Z" fill="#f2f6f7"/>
+  <path d="M82 335 L230 120 L285 235 L400 335 Z" fill="#e7f0f2"/>
+  <rect y="335" width="400" height="315" fill="#2b6f7d"/>
+  <path d="M0 410 C75 385 134 432 203 410 C278 385 332 426 400 402 L400 650 L0 650 Z" fill="#174554"/>
+</svg>

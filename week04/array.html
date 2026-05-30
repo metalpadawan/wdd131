@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 Week 04 JavaScript array functions learning activity by Emmanuel Ndem.">
+  <meta name="author" content="Emmanuel Ndem">
+  <title>WDD 131 - JavaScript Array Functions - Emmanuel Ndem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/array.css">
+  <script src="scripts/array.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>JavaScript Array Functions</h1>
+
+    <section class="card">
+      <h2>Names Array</h2>
+      <p class="source-array">Original array: <output id="originalNames"></output></p>
+
+      <button id="calculate" type="button">Recalculate Results</button>
+
+      <dl class="results">
+        <div>
+          <dt>filter()</dt>
+          <dd>Names that start with B: <output id="namesB"></output></dd>
+        </div>
+        <div>
+          <dt>map()</dt>
+          <dd>Name lengths: <output id="nameLengths"></output></dd>
+        </div>
+        <div>
+          <dt>reduce()</dt>
+          <dd>Average name length: <output id="averageLength"></output></dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Emmanuel Ndem | JavaScript Array Functions Activity</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

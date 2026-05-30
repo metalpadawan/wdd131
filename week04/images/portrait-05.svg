@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="650" viewBox="0 0 400 650" role="img" aria-labelledby="title desc">
+  <title id="title">Ocean cliffs and sky</title>
+  <desc id="desc">A stylized portrait scene with ocean cliffs below a bright sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9f1f3"/>
+      <stop offset="0.5" stop-color="#87c5cf"/>
+      <stop offset="1" stop-color="#1d5c72"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="650" fill="url(#sky)"/>
+  <path d="M0 370 C70 342 128 382 200 360 C284 335 324 376 400 350 L400 650 L0 650 Z" fill="#1f7a8c"/>
+  <path d="M0 445 C78 420 150 470 224 440 C306 408 340 460 400 430 L400 650 L0 650 Z" fill="#145a6a"/>
+  <path d="M0 292 L150 330 L96 650 L0 650 Z" fill="#694f3a"/>
+  <path d="M400 275 L260 340 L305 650 L400 650 Z" fill="#5f4936"/>
+  <path d="M0 292 L150 330 L132 385 L0 350 Z" fill="#8db06b"/>
+  <path d="M400 275 L260 340 L272 392 L400 342 Z" fill="#7fa062"/>
+</svg>

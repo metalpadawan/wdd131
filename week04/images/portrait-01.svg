@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="650" viewBox="0 0 400 650" role="img" aria-labelledby="title desc">
+  <title id="title">Layered sunrise landscape</title>
+  <desc id="desc">A stylized portrait scene with a sunrise over layered hills.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f6d58a"/>
+      <stop offset="0.55" stop-color="#f2a65a"/>
+      <stop offset="1" stop-color="#5f6f52"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="650" fill="url(#sky)"/>
+  <circle cx="200" cy="210" r="72" fill="#fff2b5"/>
+  <path d="M0 355 C70 305 124 405 198 352 C282 292 326 360 400 320 L400 650 L0 650 Z" fill="#3f6f5e"/>
+  <path d="M0 450 C92 390 142 492 235 430 C302 386 350 430 400 400 L400 650 L0 650 Z" fill="#244f47"/>
+  <path d="M0 535 C86 488 156 568 242 515 C316 470 356 520 400 490 L400 650 L0 650 Z" fill="#102f35"/>
+</svg>

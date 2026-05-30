@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WDD 131 Week 04 lazy loading images learning activity by Emmanuel Ndem.">
+  <meta name="author" content="Emmanuel Ndem">
+  <title>WDD 131 - Lazy Loading Images - Emmanuel Ndem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/lazyload.css">
+  <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Lazy Loading Images</h1>
+    <img src="images/portrait-01.svg" alt="Layered sunrise landscape in a portrait frame" loading="lazy" decoding="async" width="400" height="650">
+    <img src="images/portrait-02.svg" alt="Quiet mountain lake scene in a portrait frame" loading="lazy" decoding="async" width="400" height="650">
+    <img src="images/portrait-03.svg" alt="Tall city skyline at sunset in a portrait frame" loading="lazy" decoding="async" width="400" height="650">
+    <img src="images/portrait-04.svg" alt="Forest path with moonlight in a portrait frame" loading="lazy" decoding="async" width="400" height="650">
+    <img src="images/portrait-05.svg" alt="Ocean cliffs and sky in a portrait frame" loading="lazy" decoding="async" width="400" height="650">
+    <img src="images/portrait-06.svg" alt="Desert mesas under a night sky in a portrait frame" loading="lazy" decoding="async" width="400" height="650">
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Emmanuel Ndem | Lazy Loading Activity</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
