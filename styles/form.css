@@ -1,0 +1,230 @@
+:root {
+  --primary-color: #3b0033;
+  --panel-color: #d4ccd4;
+  --panel-border: #bbb2bb;
+  --text-color: #111111;
+  --accent-color: #00136d;
+  --input-border: #ded8de;
+  --button-border: #7d7d7d;
+  --page-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  color: var(--text-color);
+  background-color: var(--page-color);
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header,
+footer {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 9vw, 3.8rem);
+}
+
+main {
+  width: min(100%, 46rem);
+  margin: 0 auto;
+  padding: 1.6rem 0 2rem;
+}
+
+form,
+.confirmation {
+  border: 1px solid var(--panel-border);
+  border-radius: 8px;
+  padding: 1.6rem clamp(1rem, 4vw, 2rem);
+  background-color: var(--panel-color);
+}
+
+label,
+legend {
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+label {
+  display: block;
+  margin-top: 1.7rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.45rem;
+  border: 2px solid var(--input-border);
+  padding: 0.8rem 1rem;
+  color: var(--text-color);
+  background-color: #ffffff;
+  font: inherit;
+  font-size: 1.2rem;
+}
+
+select,
+input[type="date"],
+input[type="text"] {
+  min-height: 4rem;
+}
+
+textarea {
+  min-height: 11rem;
+  resize: vertical;
+}
+
+select:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 3px solid #8d6a00;
+  outline-offset: 2px;
+}
+
+fieldset {
+  margin: 1.7rem 0 0;
+  border: 0;
+  padding: 0;
+}
+
+.rating-options {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin-top: 0.7rem;
+}
+
+.rating-options label {
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  margin: 0;
+  min-width: 0;
+}
+
+.rating-options span {
+  min-height: 2rem;
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+input[type="radio"] {
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  accent-color: var(--primary-color);
+}
+
+.features-field legend span {
+  display: block;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.features-field label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.7rem;
+  font-size: 1.25rem;
+}
+
+input[type="checkbox"] {
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  margin: 0;
+  accent-color: var(--primary-color);
+}
+
+.optional {
+  color: var(--accent-color);
+  font-size: 1rem;
+}
+
+input[type="submit"],
+.confirmation a {
+  display: block;
+  width: 100%;
+  margin-top: 1.7rem;
+  border: 2px solid var(--button-border);
+  border-radius: 4px;
+  padding: 1rem;
+  color: var(--text-color);
+  background-color: #f1f1f1;
+  font: inherit;
+  font-size: clamp(1.6rem, 7vw, 2.6rem);
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.confirmation a:hover,
+.confirmation a:focus {
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.confirmation h2 {
+  margin: 0 0 0.75rem;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+.confirmation p {
+  margin: 0.75rem 0;
+  font-size: 1.15rem;
+}
+
+#reviewCount {
+  font-weight: 700;
+}
+
+footer {
+  padding: 1.2rem 1rem;
+  font-size: clamp(1rem, 4vw, 1.35rem);
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  font-size: 0.95rem;
+}
+
+@media screen and (min-width: 52rem) {
+  main {
+    padding-inline: 1rem;
+  }
+
+  form,
+  .confirmation {
+    padding: 2rem;
+  }
+}

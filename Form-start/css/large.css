@@ -1,0 +1,29 @@
+@media only screen and (min-width: 64rem) {
+  header,
+  nav,
+  main,
+  footer {
+    max-width: 64rem;
+    margin: auto;
+  }
+
+  body {
+    background-image: linear-gradient(90deg, #edf5f2 0, #f4f7f8 18%, #f4f7f8 82%, #edf5f2 100%);
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: start;
+  }
+
+  fieldset {
+    margin: 0;
+  }
+
+  fieldset:last-of-type,
+  .submitBtn {
+    grid-column: 1 / -1;
+  }
+}

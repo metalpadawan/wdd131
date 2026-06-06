@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Course proposal form learning activity for WDD 131 by Emmanuel Ndem.">
+  <meta name="author" content="Emmanuel Ndem">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 131 - HTML Forms - Emmanuel Ndem</title>
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Course Proposal</h1>
+    <h2>Designing Web Forms</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li class="active"><a href="index.html">Propose</a></li>
+      <li><a href="#">Winners</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Course Proposal Application</h1>
+    <p class="intro">Use this form to propose a new course for the online learning library.</p>
+
+    <form method="get" action="thanks.html">
+      <fieldset>
+        <legend>Applicant Information</legend>
+
+        <label>First Name
+          <input type="text" name="fname" autocomplete="given-name" required>
+        </label>
+
+        <label>Last Name
+          <input type="text" name="lname" autocomplete="family-name" required>
+        </label>
+
+        <label>Email
+          <input type="email" name="email" autocomplete="email" placeholder="name@example.com" required>
+        </label>
+
+        <label>Phone
+          <input type="tel" name="phone" autocomplete="tel" placeholder="5551234567" pattern="[0-9]{10}" title="Enter a 10-digit phone number.">
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+
+        <label>Course Title
+          <input type="text" name="course-title" required>
+        </label>
+
+        <label>Course Website
+          <input type="url" name="course-url" placeholder="https://example.com">
+        </label>
+
+        <label>Course Level
+          <select name="course-level" required>
+            <option value="">Choose a level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>
+        </label>
+
+        <label>Preferred Start Date
+          <input type="date" name="start-date" required>
+        </label>
+
+        <label>Estimated Weekly Hours
+          <input type="range" id="weeklyHours" name="weekly-hours" min="1" max="20" value="6">
+          <output id="weeklyHoursOutput" for="weeklyHours">6 hours</output>
+        </label>
+
+        <label>Number of Lessons
+          <input type="number" name="lessons" min="1" max="20" step="1" value="6">
+        </label>
+
+        <div class="form-group">
+          <p>Delivery Format</p>
+          <label class="sbs"><input type="radio" name="delivery" value="self-paced" checked> Self-paced</label>
+          <label class="sbs"><input type="radio" name="delivery" value="instructor-led"> Instructor-led</label>
+          <label class="sbs"><input type="radio" name="delivery" value="hybrid"> Hybrid</label>
+        </div>
+
+        <div class="form-group">
+          <p>Target Audience</p>
+          <label class="sbs"><input type="checkbox" name="audience" value="youth"> Youth</label>
+          <label class="sbs"><input type="checkbox" name="audience" value="college-students"> College students</label>
+          <label class="sbs"><input type="checkbox" name="audience" value="working-adults"> Working adults</label>
+        </div>
+
+        <label>Course Description
+          <textarea name="description" rows="6" placeholder="Briefly describe the course purpose, topics, and learning outcomes." required></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agreement</legend>
+        <label class="sbs agreement">
+          <input type="checkbox" name="agreement" value="yes" required>
+          I confirm that this proposal is original and ready for review.
+        </label>
+      </fieldset>
+
+      <input class="submitBtn" type="submit" value="Submit Course Proposal">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Emmanuel Ndem | Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
