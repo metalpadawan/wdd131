@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use a short form to receive a classic anime recommendation and review saved favorites.">
+  <meta name="author" content="Emmanuel Ndem">
+  <title>Classic Anime Archive | Recommendations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/classic-anime.css">
+  <script src="scripts/classic-anime.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Classic Anime Archive home">
+        <span class="brand-mark" aria-hidden="true">CAA</span>
+        <span>Classic Anime Archive</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="titles.html">Title Guide</a></li>
+        <li><a href="recommendations.html" aria-current="page">Recommendations</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <p class="eyebrow">Personal watch path</p>
+      <h1>Recommendation Finder</h1>
+      <p>Answer three quick questions and the archive will suggest a title that matches your mood.</p>
+    </section>
+
+    <section class="recommendation-layout">
+      <form id="recommendation-form" class="recommendation-form">
+        <fieldset>
+          <legend>Your preferences</legend>
+
+          <label for="viewer-name">Name <span aria-hidden="true">*</span></label>
+          <input id="viewer-name" name="viewer-name" type="text" autocomplete="given-name" required>
+
+          <label for="mood">What mood do you want?</label>
+          <select id="mood" name="mood">
+            <option value="thoughtful">Thoughtful and emotional</option>
+            <option value="adventurous">Adventure and discovery</option>
+            <option value="intense">Intense action</option>
+          </select>
+
+          <label for="watch-length">Preferred length</label>
+          <select id="watch-length" name="watch-length">
+            <option value="film">A film or short watch</option>
+            <option value="series">A series</option>
+          </select>
+
+          <label for="notes">Anything you already like?</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Example: space stories, quiet drama, robots, fantasy worlds"></textarea>
+        </fieldset>
+        <button class="button primary" type="submit">Show Recommendation</button>
+      </form>
+
+      <aside class="result-panel" aria-live="polite">
+        <h2>Your suggestion</h2>
+        <div id="recommendation-result">
+          <p>Submit the form to receive a classic anime starting point.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Saved in this browser</p>
+        <h2>Favorite titles</h2>
+      </div>
+      <div id="favorites-list" class="saved-list"></div>
+      <button id="clear-favorites" class="button secondary" type="button">Clear Favorites</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="current-year"></span> Emmanuel Ndem | WDD 131 Project</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>

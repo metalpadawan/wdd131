@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse classic anime titles by decade and genre, then save favorites to your browser.">
+  <meta name="author" content="Emmanuel Ndem">
+  <title>Classic Anime Archive | Title Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/classic-anime.css">
+  <script src="scripts/classic-anime.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Classic Anime Archive home">
+        <span class="brand-mark" aria-hidden="true">CAA</span>
+        <span>Classic Anime Archive</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="titles.html" aria-current="page">Title Guide</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro">
+      <p class="eyebrow">Browse the archive</p>
+      <h1>Title Guide</h1>
+      <p>Filter the list by decade or genre, then save the shows and films you want to remember.</p>
+    </section>
+
+    <section class="filter-panel" aria-labelledby="filter-heading">
+      <h2 id="filter-heading">Find a classic</h2>
+      <div class="filters">
+        <label for="decade-filter">Decade</label>
+        <select id="decade-filter">
+          <option value="all">All decades</option>
+          <option value="1960s">1960s</option>
+          <option value="1970s">1970s</option>
+          <option value="1980s">1980s</option>
+          <option value="1990s">1990s</option>
+        </select>
+
+        <label for="genre-filter">Genre</label>
+        <select id="genre-filter">
+          <option value="all">All genres</option>
+          <option value="adventure">Adventure</option>
+          <option value="drama">Drama</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="mecha">Mecha</option>
+          <option value="sci-fi">Sci-fi</option>
+        </select>
+      </div>
+      <p id="result-count" class="filter-count" aria-live="polite"></p>
+    </section>
+
+    <section class="section-block" aria-labelledby="titles-heading">
+      <h2 id="titles-heading">Classic titles</h2>
+      <div id="title-list" class="card-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="current-year"></span> Emmanuel Ndem | WDD 131 Project</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>

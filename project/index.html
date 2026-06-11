@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Classic Anime Archive helps new fans explore influential anime series and films from earlier decades.">
+  <meta name="author" content="Emmanuel Ndem">
+  <title>Classic Anime Archive | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/classic-anime.css">
+  <script src="scripts/classic-anime.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="brand" href="index.html" aria-label="Classic Anime Archive home">
+        <span class="brand-mark" aria-hidden="true">CAA</span>
+        <span>Classic Anime Archive</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-menu">Menu</button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="titles.html">Title Guide</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Curated classics from 1963-1998</p>
+        <h1>Start your classic anime watchlist with confidence.</h1>
+        <p>
+          Explore influential series and films by decade, genre, mood, and studio.
+          The archive is built for new viewers who want a clear path into older anime without feeling lost.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="titles.html">Browse Titles</a>
+          <a class="button secondary" href="recommendations.html">Get a Suggestion</a>
+        </div>
+      </div>
+      <div class="poster-wall" aria-label="Illustrated classic anime poster collage">
+        <span class="poster poster-one"></span>
+        <span class="poster poster-two"></span>
+        <span class="poster poster-three"></span>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Featured starting points</p>
+        <h2>Three approachable classics</h2>
+      </div>
+      <div id="featured-titles" class="card-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section-block split-panel">
+      <div>
+        <p class="eyebrow">Why these older works matter</p>
+        <h2>Animation history in watchable steps</h2>
+        <p>
+          Classic anime covers more than nostalgia. It includes early television experiments,
+          theatrical science fiction, hand-painted fantasy, sports drama, and character studies
+          that still influence animation, games, and film today.
+        </p>
+      </div>
+      <ul class="check-list">
+        <li>Short summaries help you choose without spoilers.</li>
+        <li>Decade and genre filters make browsing practical.</li>
+        <li>Favorites are saved in your browser for your next visit.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="current-year"></span> Emmanuel Ndem | WDD 131 Project</p>
+    <p id="last-modified"></p>
+  </footer>
+</body>
+</html>
